@@ -3,7 +3,7 @@ from .models import Question
 
 # Register your models here.
 
-class QuestionADmin(admin.ModelAdmin):
+class QuestionAdmin(admin.ModelAdmin):
   fields =['date', 'text']
 
 admin.site.register(Question)
