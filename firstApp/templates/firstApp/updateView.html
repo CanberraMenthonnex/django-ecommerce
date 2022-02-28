@@ -1,0 +1,12 @@
+<div class="main">
+  <!-- Create a Form -->
+  <form method="POST">
+      <!-- Security token by Django -->
+      {% csrf_token %}
+      {{ form.as_p }}
+      <!-- form as paragraph -->
+
+      <input type="submit" value="Update">
+  </form>
+
+</div>
