@@ -6,17 +6,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'shopApp/style.css' %}">
     <title>{{ data.title }}</title>
 </head>
 <body>
-    <div class="card">
-        <!-- Specify fields to be displayed -->
-        {{ data.title }}<br/>
-        {{ data.description }}<br/>
-        {{ data.price }}<br/>
-        {{ data.quantity }}<br/>
-        {{ data.image }}<br/>
-    </div>
+    <section id="product">
+        <div>
+            <img src="{{ data.image }}" alt="">
+        </div>
+        <div class="desc">
+            <h1>{{ data.title }}</h1>
+            <p>{{ data.description }}</p>
+            <h2>Stock : {{ data.price }}</h2>
+            <div>
+                <p>{{ data.quantity }}€</p>
+            </div>
+            <button>Buy</button>
+        </div>
+    </section>
+    
 </body>
 </html>

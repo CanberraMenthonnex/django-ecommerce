@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+h1{
+    text-align: center;
+    margin-top: 2%;
+}
+
+#index section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 2% 5%;
+}
+
+#index img{
+    width: 100%;
+
+}
+
+section > div{
+    border-radius: 10px;
+    background-color: 53, 53, 53, 0.1;
+    box-shadow: 3px 3px 8px 1px rgba(53, 53, 53, 0.1);
+    overflow: hidden;
+}
+
+
+
+#product{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: 10% auto;
+}
+
+#product img{
+    width: 500px;
+}
+
+.desc{
+    text-align: center;
+}
+
+.desc > p{
+    width: 60%;
+    margin: auto;
+}
+
+.desc div{
+    border: 1px solid black;
+    width: fit-content;
+    margin: auto;
+    padding: 2px 15px;
+}
