@@ -8,5 +8,15 @@
 </head>
 <body>
     <h1>Shop App</h1>
+
+    {% for data in dataset %}
+    
+    {{ data.title }}<br/> {{data.description}}
+    {{ data.price }}
+    <br/>
+    <a href="../shopApp/{{data.id}}">Lien</a>
+    <br/>
+  
+    {% endfor %}
 </body>
 </html>
