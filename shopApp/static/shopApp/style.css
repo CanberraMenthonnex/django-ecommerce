@@ -8,9 +8,19 @@ a{
     text-decoration: none;
     color: black;
 }
+
 h1{
     text-align: center;
     margin-top: 2%;
+}
+
+h2{
+    text-align: center;
+    margin: 2%;
+}
+
+h3{
+    padding: 0 0 2% 4%;
 }
 
 body{
@@ -74,8 +84,28 @@ section > div{
     height: 100%;
 }
 
+#product button{
+    padding: 10px;
+}
+
 .desc{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     text-align: center;
+    padding: 20px 0;
+}
+
+.desc a{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+.desc a::before{
+    content: "< ";
 }
 
 .desc > p{
