@@ -7,5 +7,6 @@ app_name = 'shopApp'
 
 urlpatterns = [
   path('', views.index, name='index'),
-  path('<id>', views.detailView, name='detailView')
+  path('<id>', views.detailView, name='detailView'),
+  path('update/<id>', views.updateProduct, name='updateView')
 ]

@@ -17,11 +17,18 @@
         <div class="desc">
             <h1>{{ data.title }}</h1>
             <p>{{ data.description }}</p>
-            <h2>Stock : {{ data.price }}</h2>
+            <h2>Stock : {{ data.quantity }}</h2>
             <div>
-                <p>{{ data.quantity }}€</p>
+                <p>{{ data.price }}€</p>
             </div>
-            <button>Buy</button>
+
+            <a href="../shopApp/">Return home</a>
+            <br>
+
+            <form action="update/{{data.id}}" action="POST">
+              <button type="submits">Buy</button>
+            </form>
+            
         </div>
     </section>
     
