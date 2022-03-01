@@ -6,7 +6,7 @@ from .models import Product
 def index(request):
   context ={}
   # add the dictionary during initialization
-  context["dataset"] = Product.objects.all()
+  context["dataset"] = Product.objects.filter(quantity__gte = 1)
         
   return render(request, "shopApp/index.html", context)
 
