@@ -14,11 +14,11 @@
 
         <section>
             {% for data in dataset %}
-            <div>
+            <div class="card">
                 <img src="{{ data.image }}" alt="">
                 <h2>{{ data.title }}</h2>
                 <h3>{{ data.price }}€</h3>
-                <div class="hover">
+                <div class="overlay">
                     <a href="../shopApp/{{data.id}}">Voir détail</a>
                 </div>
                 
