@@ -11,7 +11,7 @@ def index(request):
   return render(request, "shopApp/index.html", context)
 
 
-def detailView(request):
+def detailView(request, id):
   context= {}
   context["data"] = Product.objects.get(id = id)
          
